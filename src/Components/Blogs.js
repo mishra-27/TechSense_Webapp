@@ -35,7 +35,7 @@ const Blogs = () => {
       <div className="blogs">
         {blogs?.articles?.map((blog) => (
           <a className="blog" target="_blank" href={blog.url} rel="noreferrer">
-            <img src={blog.image} />
+            <img src={blog.image} alt='Image'/>
             <div>
               <h3 className="sourceName">
                 <span>{blog.source.name}</span>
@@ -46,7 +46,7 @@ const Blogs = () => {
             </div>
           </a>
         ))}
-        {blogs?.totalArticles == 0 && (
+        {blogs?.totalArticles === 0 && (
           <div className="no__blogs">
             <h1> Offo!! <br/> No blogs available :( </h1>
             <p> Why don't you try something else, huh?</p>
