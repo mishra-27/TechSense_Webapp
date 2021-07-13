@@ -35,7 +35,7 @@ const Blogs = () => {
       <div className="blogs">
         {blogs?.articles?.map((blog) => (
           <a className="blog" target="_blank" href={blog.url} rel="noreferrer">
-            <img src={blog.image} alt='Image'/>
+            <img src={blog.image} alt="image"/>
             <div>
               <h3 className="sourceName">
                 <span>{blog.source.name}</span>
