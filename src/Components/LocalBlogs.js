@@ -1,14 +1,14 @@
 import React, { /*useEffect, useState*/} from "react";
 /*import axios from "axios";*/
-import { /*useDispatch,*/ useSelector } from "react-redux";
-import { selectUserInput/*, setBlogData*/ } from "../features/userSlice";
+/*import { useDispatch, useSelector } from "react-redux";
+import { selectUserInput, setBlogData } from "../features/userSlice";*/
 
 import "../styling/blogs.css";
 import articles from './Article.json';
 import ReadMoreReact from 'read-more-react';
 
 const Blogs = () => {
-  const searchInput = useSelector(selectUserInput);
+  /*const searchInput = useSelector(selectUserInput);*/
   /*const blog_url = `https://gnews.io/api/v4/search?q=${searchInput}&token=9a20e3bb45fcf65897af8407be1aec6a`;
   const dispatch = useDispatch();
   const [blogs, setBlogs] = useState();
